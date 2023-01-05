@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  background-color: #f6d43c;
+  color: #1e1e1e;
+  padding: 0; }
+
+section {
+  padding: 5em 0;
+  margin: 0 auto; }
+  @media (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
+    section {
+      padding: 2em 0; } }
+
+.line {
+  width: 4em;
+  border-bottom: 1px solid #1e1e1e;
+  margin: 0 auto; }
+
+.container {
+  margin: 0 10%; }
+
+h2 {
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-align: center;
+  color: #1e1e1e;
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: 2.4em; }
+  @media (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
+    h2 {
+      font-size: 1.4em;
+      margin-top: 0.6em; } }
+  
+.slideshow {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+.slideshow__img {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  background-position: 0% 0%;
+  animation-name: slideshow;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; }
+  @media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+    
+	.slideshow__img {
+      background-size: cover;
+      width: 100%;
+      background-position: 0% 0%; } }
+
+.slideshow__img:nth-child(1) {
+  animation-delay: 0s;
+  background-image: url("../images/head-background/back-06.jpg"); }
+
+.slideshow__img:nth-child(2) {
+  animation-delay: 10s;
+  background-image: url("../images/head-background/back-04.jpg"); }
+
+.slideshow__img:nth-child(3) {
+  animation-delay: 20s;
+  background-image: url("../images/head-background/back-05.jpg"); }
+
+@keyframes slideshow {
+  0% {
+    opacity: 0; }
+  11.11% {
+    opacity: 1; }
+  33.33% {
+    opacity: 1; }
+  44.44% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }	
+	
+.hero {
+  position: absolute;
+  margin: 0 auto;
+  top: 16%;
+  max-width: 1600px;
+  width: 100%;
+  z-index: 2; }
+  @media (min-width: 992px) and (max-width: 1199px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+    .hero {
+      top: 20%; } }
+  .hero .hero--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hero .hero--content .hero--img {
+      width: 200px;
+      height: 50%;
+      margin: 0 auto; }
+      @media (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+        .hero .hero--content .hero--img {
+          width: 9em; } }
+    .hero .hero--content h2 {
+      color: #fff;
+      font-size: 2.8em;
+      padding-top: 0;
+      letter-spacing: 0.5em;
+      font-weight: 300; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .hero .hero--content h2 {
+          padding: 0 2em;
+          margin-top: 0;
+          font-size: 3em; } }
+      @media (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+        .hero .hero--content h2 {
+          font-size: 1.5em;
+          letter-spacing: 0.1em;
+          margin: 0;
+          padding: 0 4em; } }
+
+.sentence {
+  background-color: #1e1e1e; }
+  .sentence .sentence__container .sentence__head {
+    color: #d3d3d3;
+    font-size: 2.2em;
+    padding: 0;
+    font-weight: 300; }
+    @media (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
+      .sentence .sentence__container .sentence__head {
+        font-size: 1.4em; } }
+
+.contact__container {
+  padding-top: 5em;
+  padding-bottom: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  @media (min-width: 768px) and (max-width: 991px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+    .contact__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0; } }
+  .contact__container .contact__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; }
+    @media (min-width: 768px) and (max-width: 991px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+      .contact__container .contact__content {
+        width: 100%;
+        margin-bottom: 20px; } }
+    .contact__container .contact__content .contact__icon {
+      width: 2em;
+      height: 2em;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: 100%;
+      background-position: center; }
+    .contact__container .contact__content .icon--address {
+      background-image: url("../images/icons/location.png"); }
+    .contact__container .contact__content .icon--phone {
+      background-image: url("../images/icons/phone.png"); }
+    .contact__container .contact__content .icon--mail {
+      background-image: url("../images/icons/mail.png"); }
+    .contact__container .contact__content h4 {
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.2em;
+      letter-spacing: 0.1em;
+      text-align: center;
+      padding: 0; }
+    .contact__container .contact__content a {
+      text-decoration: none;
+      color: #1e1e1e;
+      padding-top: 0.5em;
+      font-family: "Open Sans", sans-serif; }
+    .contact__container .contact__content p {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.2em;
+      text-align: center; }
+
+footer {
+  background-color: #1e1e1e; }
+  footer .footer__container {
+    border: solid 2px #1e1e1e; }
+    footer .footer__container p {
+      color: #00a082;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 0.5em;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.8em; }
+      @media (min-width: 768px) and (max-width: 991px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+        footer .footer__container p {
+          font-size: 0.4em; } }
+
